@@ -1,0 +1,530 @@
+========================
+TIME_LIMIT_SECONDS: 900
+ODD_HOLE_TERMINATION_PERCENTAGE: 999
+N_THREADS: 24
+IS_RUNNING_HEURISTIC_ON_CANDIDATE: 0
+IS_RUNNING_HEURISTIC_ON_RELAXATION: 0
+ADD_ALL_AT_START: 0
+========================
+Wall-Clock Runtime (ms): 900241
+Calculated Odd Hole Termination Batch Size: 0
+Total Time of All Workers in OddHoleAlg (nano): 718587686
+Total Time of All Workers in OddHoleAlg (ms): 718
+OddHoleAlg calls: 46
+Number of Found Odd-Holes: 151444
+Number of Found Odd Anti-Holes: 204224
+Is Optimal? (1e-6): 0
+Optimality Gap: 0.794621
+Objective Value: 409
+Number of Feasible Solutions Found: 1
+Number of Times Heuristic is Called: 0
+Total number of added OH and OHbar Cuts: 355668
+Number of Explored B&C tree nodes: 13698
+Number of Unexplored B&C tree nodes: 3087
+========================
+Input Graph:
+Number of Vertices: 40
+Erdos Renyi p Parameter: 0.5
+Number of Edges: 371
+Expected No of Odd Holes: 10991
+Expected No of Odd Anti Holes: 3280
+ODD_HOLE_TERMINATION_BATCH_SIZE: 0
+Graph Density: 0.475641
+0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,1,0,1,0,
+1,0,1,1,1,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,
+0,1,0,1,1,0,1,1,1,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,0,
+0,1,1,0,1,0,1,0,1,0,1,1,0,0,1,1,1,0,0,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,1,1,1,0,0,1,
+1,1,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,1,0,1,0,1,1,1,1,1,1,1,
+0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,1,0,1,0,1,0,1,1,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0,1,
+0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,1,0,1,0,1,1,0,1,1,1,1,1,1,0,0,1,1,1,0,0,
+0,0,1,0,0,1,0,0,1,1,0,0,1,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,1,
+0,1,1,1,0,1,0,1,0,0,0,0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,0,0,1,0,0,1,0,0,0,0,0,1,
+0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1,1,1,1,0,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,1,1,0,
+0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,
+0,1,0,1,1,0,1,0,0,0,1,0,1,1,1,0,1,1,0,0,1,1,1,1,1,0,0,1,1,0,1,1,0,0,1,0,0,0,0,1,
+1,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,0,1,0,1,1,0,0,0,1,0,0,0,1,0,1,0,
+0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0,0,1,1,1,0,0,1,0,1,0,0,0,
+0,1,0,1,1,0,1,0,1,1,0,1,1,0,0,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,0,0,0,0,1,1,0,1,1,
+0,0,0,1,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0,0,1,1,1,0,1,1,1,0,0,1,0,0,
+1,1,0,1,0,1,0,0,1,1,1,1,0,1,1,0,0,0,1,0,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,0,1,0,0,1,
+1,1,1,0,0,0,0,0,1,1,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,1,0,1,0,0,1,1,1,
+1,1,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,0,0,1,
+1,0,0,1,0,0,0,1,1,0,1,0,0,0,1,0,0,0,1,0,1,1,1,1,0,1,1,0,0,0,1,0,1,1,1,1,0,1,0,1,
+0,1,1,0,1,1,1,1,0,0,0,1,0,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,1,0,1,1,
+1,1,1,0,0,0,0,1,1,1,1,1,0,1,0,0,0,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,0,0,0,1,1,0,1,0,
+0,0,0,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0,
+1,1,0,0,1,1,0,0,0,1,1,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,0,0,1,1,1,1,0,1,
+0,1,0,1,0,0,1,0,1,0,1,1,0,1,1,1,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,0,1,0,1,0,1,
+1,0,1,1,0,0,1,1,0,1,0,0,1,1,1,1,1,0,0,1,1,0,1,0,1,0,0,0,1,0,1,0,1,1,0,0,1,0,0,1,
+0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,
+1,0,1,1,0,1,1,1,1,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,1,1,1,1,0,1,1,0,0,
+0,0,1,1,1,1,1,0,0,1,0,1,1,0,0,1,1,0,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,0,0,1,1,1,
+0,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,0,1,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,
+0,0,0,0,0,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,
+1,0,1,1,1,0,1,0,0,1,1,1,0,1,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,1,
+0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,
+1,1,0,0,1,1,0,1,1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,0,1,1,1,1,1,0,0,0,0,0,1,1,0,1,0,1,
+1,0,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,
+1,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1,1,0,1,0,0,1,1,1,0,1,1,0,0,0,1,1,
+1,0,0,1,1,0,1,1,0,0,1,0,1,1,1,0,1,0,0,0,1,1,0,1,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,
+0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,1,0,0,1,1,1,0,0,1,1,0,0,1,0,1,0,
+1,1,1,0,1,0,0,0,0,1,1,0,1,0,1,0,0,1,0,0,1,1,1,0,0,0,1,0,1,0,0,1,1,0,0,1,0,1,0,0,
+0,0,0,1,1,1,0,1,1,0,0,1,0,0,1,0,1,1,1,1,1,0,0,1,1,1,1,0,1,1,0,1,0,1,0,1,1,0,0,0,
+========================
+Output Graph: 
+Number of Vertices: 40
+Number of Edges: 780
+Graph Density: 1
+0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,
+Is Output Graph Empty or Complete?: 1
+Ratio of Added Edges Over Added + Removed Edges: 1
+Changes from Input to Output: 
+Added Edge: (0, 2)
+Added Edge: (0, 3)
+Added Edge: (0, 5)
+Added Edge: (0, 6)
+Added Edge: (0, 7)
+Added Edge: (0, 8)
+Added Edge: (0, 9)
+Added Edge: (0, 10)
+Added Edge: (0, 11)
+Added Edge: (0, 13)
+Added Edge: (0, 14)
+Added Edge: (0, 15)
+Added Edge: (0, 20)
+Added Edge: (0, 22)
+Added Edge: (0, 24)
+Added Edge: (0, 26)
+Added Edge: (0, 28)
+Added Edge: (0, 29)
+Added Edge: (0, 30)
+Added Edge: (0, 32)
+Added Edge: (0, 37)
+Added Edge: (0, 39)
+Added Edge: (1, 6)
+Added Edge: (1, 7)
+Added Edge: (1, 9)
+Added Edge: (1, 12)
+Added Edge: (1, 15)
+Added Edge: (1, 19)
+Added Edge: (1, 22)
+Added Edge: (1, 25)
+Added Edge: (1, 26)
+Added Edge: (1, 27)
+Added Edge: (1, 28)
+Added Edge: (1, 29)
+Added Edge: (1, 30)
+Added Edge: (1, 31)
+Added Edge: (1, 32)
+Added Edge: (1, 34)
+Added Edge: (1, 35)
+Added Edge: (1, 36)
+Added Edge: (1, 37)
+Added Edge: (1, 39)
+Added Edge: (2, 5)
+Added Edge: (2, 10)
+Added Edge: (2, 11)
+Added Edge: (2, 13)
+Added Edge: (2, 14)
+Added Edge: (2, 15)
+Added Edge: (2, 16)
+Added Edge: (2, 18)
+Added Edge: (2, 19)
+Added Edge: (2, 22)
+Added Edge: (2, 23)
+Added Edge: (2, 24)
+Added Edge: (2, 26)
+Added Edge: (2, 29)
+Added Edge: (2, 30)
+Added Edge: (2, 33)
+Added Edge: (2, 35)
+Added Edge: (2, 36)
+Added Edge: (2, 37)
+Added Edge: (2, 39)
+Added Edge: (3, 5)
+Added Edge: (3, 7)
+Added Edge: (3, 9)
+Added Edge: (3, 12)
+Added Edge: (3, 13)
+Added Edge: (3, 17)
+Added Edge: (3, 18)
+Added Edge: (3, 20)
+Added Edge: (3, 21)
+Added Edge: (3, 23)
+Added Edge: (3, 30)
+Added Edge: (3, 32)
+Added Edge: (3, 33)
+Added Edge: (3, 37)
+Added Edge: (3, 38)
+Added Edge: (4, 5)
+Added Edge: (4, 6)
+Added Edge: (4, 7)
+Added Edge: (4, 8)
+Added Edge: (4, 9)
+Added Edge: (4, 10)
+Added Edge: (4, 12)
+Added Edge: (4, 13)
+Added Edge: (4, 15)
+Added Edge: (4, 16)
+Added Edge: (4, 17)
+Added Edge: (4, 19)
+Added Edge: (4, 21)
+Added Edge: (4, 24)
+Added Edge: (4, 25)
+Added Edge: (4, 26)
+Added Edge: (4, 27)
+Added Edge: (4, 30)
+Added Edge: (4, 32)
+Added Edge: (5, 6)
+Added Edge: (5, 10)
+Added Edge: (5, 11)
+Added Edge: (5, 13)
+Added Edge: (5, 14)
+Added Edge: (5, 15)
+Added Edge: (5, 17)
+Added Edge: (5, 19)
+Added Edge: (5, 21)
+Added Edge: (5, 24)
+Added Edge: (5, 25)
+Added Edge: (5, 26)
+Added Edge: (5, 29)
+Added Edge: (5, 31)
+Added Edge: (5, 35)
+Added Edge: (5, 36)
+Added Edge: (5, 37)
+Added Edge: (5, 38)
+Added Edge: (6, 7)
+Added Edge: (6, 8)
+Added Edge: (6, 9)
+Added Edge: (6, 10)
+Added Edge: (6, 12)
+Added Edge: (6, 13)
+Added Edge: (6, 16)
+Added Edge: (6, 17)
+Added Edge: (6, 19)
+Added Edge: (6, 21)
+Added Edge: (6, 23)
+Added Edge: (6, 26)
+Added Edge: (6, 33)
+Added Edge: (6, 34)
+Added Edge: (6, 38)
+Added Edge: (6, 39)
+Added Edge: (7, 10)
+Added Edge: (7, 11)
+Added Edge: (7, 14)
+Added Edge: (7, 16)
+Added Edge: (7, 17)
+Added Edge: (7, 18)
+Added Edge: (7, 22)
+Added Edge: (7, 23)
+Added Edge: (7, 24)
+Added Edge: (7, 26)
+Added Edge: (7, 28)
+Added Edge: (7, 29)
+Added Edge: (7, 31)
+Added Edge: (7, 32)
+Added Edge: (7, 34)
+Added Edge: (7, 37)
+Added Edge: (7, 38)
+Added Edge: (8, 9)
+Added Edge: (8, 10)
+Added Edge: (8, 11)
+Added Edge: (8, 13)
+Added Edge: (8, 15)
+Added Edge: (8, 18)
+Added Edge: (8, 20)
+Added Edge: (8, 22)
+Added Edge: (8, 23)
+Added Edge: (8, 25)
+Added Edge: (8, 28)
+Added Edge: (8, 29)
+Added Edge: (8, 31)
+Added Edge: (8, 32)
+Added Edge: (8, 34)
+Added Edge: (8, 35)
+Added Edge: (8, 36)
+Added Edge: (8, 37)
+Added Edge: (8, 38)
+Added Edge: (9, 11)
+Added Edge: (9, 12)
+Added Edge: (9, 13)
+Added Edge: (9, 19)
+Added Edge: (9, 20)
+Added Edge: (9, 22)
+Added Edge: (9, 24)
+Added Edge: (9, 26)
+Added Edge: (9, 30)
+Added Edge: (9, 32)
+Added Edge: (9, 34)
+Added Edge: (9, 35)
+Added Edge: (9, 36)
+Added Edge: (9, 39)
+Added Edge: (10, 12)
+Added Edge: (10, 13)
+Added Edge: (10, 14)
+Added Edge: (10, 17)
+Added Edge: (10, 18)
+Added Edge: (10, 20)
+Added Edge: (10, 25)
+Added Edge: (10, 26)
+Added Edge: (10, 27)
+Added Edge: (10, 28)
+Added Edge: (10, 29)
+Added Edge: (10, 30)
+Added Edge: (10, 32)
+Added Edge: (10, 33)
+Added Edge: (10, 34)
+Added Edge: (10, 35)
+Added Edge: (10, 37)
+Added Edge: (10, 39)
+Added Edge: (11, 15)
+Added Edge: (11, 18)
+Added Edge: (11, 19)
+Added Edge: (11, 25)
+Added Edge: (11, 26)
+Added Edge: (11, 29)
+Added Edge: (11, 32)
+Added Edge: (11, 33)
+Added Edge: (11, 35)
+Added Edge: (11, 36)
+Added Edge: (11, 37)
+Added Edge: (11, 38)
+Added Edge: (12, 15)
+Added Edge: (12, 16)
+Added Edge: (12, 18)
+Added Edge: (12, 19)
+Added Edge: (12, 20)
+Added Edge: (12, 21)
+Added Edge: (12, 23)
+Added Edge: (12, 24)
+Added Edge: (12, 26)
+Added Edge: (12, 29)
+Added Edge: (12, 30)
+Added Edge: (12, 31)
+Added Edge: (12, 33)
+Added Edge: (12, 34)
+Added Edge: (12, 35)
+Added Edge: (12, 37)
+Added Edge: (12, 39)
+Added Edge: (13, 14)
+Added Edge: (13, 17)
+Added Edge: (13, 18)
+Added Edge: (13, 19)
+Added Edge: (13, 22)
+Added Edge: (13, 23)
+Added Edge: (13, 26)
+Added Edge: (13, 27)
+Added Edge: (13, 28)
+Added Edge: (13, 32)
+Added Edge: (13, 33)
+Added Edge: (13, 35)
+Added Edge: (13, 37)
+Added Edge: (13, 38)
+Added Edge: (13, 39)
+Added Edge: (14, 18)
+Added Edge: (14, 21)
+Added Edge: (14, 22)
+Added Edge: (14, 27)
+Added Edge: (14, 28)
+Added Edge: (14, 31)
+Added Edge: (14, 32)
+Added Edge: (14, 33)
+Added Edge: (14, 34)
+Added Edge: (14, 37)
+Added Edge: (15, 16)
+Added Edge: (15, 17)
+Added Edge: (15, 19)
+Added Edge: (15, 20)
+Added Edge: (15, 21)
+Added Edge: (15, 22)
+Added Edge: (15, 23)
+Added Edge: (15, 26)
+Added Edge: (15, 27)
+Added Edge: (15, 31)
+Added Edge: (15, 35)
+Added Edge: (15, 36)
+Added Edge: (15, 38)
+Added Edge: (15, 39)
+Added Edge: (16, 17)
+Added Edge: (16, 19)
+Added Edge: (16, 20)
+Added Edge: (16, 21)
+Added Edge: (16, 24)
+Added Edge: (16, 26)
+Added Edge: (16, 27)
+Added Edge: (16, 29)
+Added Edge: (16, 35)
+Added Edge: (16, 37)
+Added Edge: (16, 38)
+Added Edge: (17, 18)
+Added Edge: (17, 19)
+Added Edge: (17, 21)
+Added Edge: (17, 23)
+Added Edge: (17, 24)
+Added Edge: (17, 25)
+Added Edge: (17, 26)
+Added Edge: (17, 27)
+Added Edge: (17, 28)
+Added Edge: (17, 33)
+Added Edge: (17, 35)
+Added Edge: (17, 36)
+Added Edge: (18, 20)
+Added Edge: (18, 22)
+Added Edge: (18, 23)
+Added Edge: (18, 24)
+Added Edge: (18, 25)
+Added Edge: (18, 26)
+Added Edge: (18, 28)
+Added Edge: (18, 32)
+Added Edge: (18, 34)
+Added Edge: (18, 36)
+Added Edge: (18, 37)
+Added Edge: (18, 38)
+Added Edge: (19, 24)
+Added Edge: (19, 27)
+Added Edge: (19, 28)
+Added Edge: (19, 29)
+Added Edge: (19, 31)
+Added Edge: (19, 36)
+Added Edge: (19, 38)
+Added Edge: (20, 28)
+Added Edge: (20, 29)
+Added Edge: (20, 31)
+Added Edge: (20, 32)
+Added Edge: (20, 33)
+Added Edge: (20, 34)
+Added Edge: (20, 35)
+Added Edge: (20, 37)
+Added Edge: (21, 25)
+Added Edge: (21, 27)
+Added Edge: (21, 29)
+Added Edge: (21, 31)
+Added Edge: (21, 32)
+Added Edge: (21, 33)
+Added Edge: (21, 34)
+Added Edge: (21, 37)
+Added Edge: (21, 39)
+Added Edge: (22, 23)
+Added Edge: (22, 24)
+Added Edge: (22, 26)
+Added Edge: (22, 27)
+Added Edge: (22, 30)
+Added Edge: (22, 31)
+Added Edge: (22, 32)
+Added Edge: (22, 35)
+Added Edge: (22, 36)
+Added Edge: (22, 37)
+Added Edge: (22, 39)
+Added Edge: (23, 24)
+Added Edge: (23, 25)
+Added Edge: (23, 26)
+Added Edge: (23, 32)
+Added Edge: (23, 33)
+Added Edge: (23, 38)
+Added Edge: (24, 26)
+Added Edge: (24, 27)
+Added Edge: (24, 28)
+Added Edge: (24, 31)
+Added Edge: (24, 32)
+Added Edge: (24, 34)
+Added Edge: (24, 36)
+Added Edge: (24, 38)
+Added Edge: (25, 26)
+Added Edge: (25, 27)
+Added Edge: (25, 29)
+Added Edge: (25, 31)
+Added Edge: (25, 34)
+Added Edge: (25, 35)
+Added Edge: (25, 37)
+Added Edge: (25, 38)
+Added Edge: (26, 27)
+Added Edge: (26, 28)
+Added Edge: (26, 29)
+Added Edge: (26, 30)
+Added Edge: (26, 31)
+Added Edge: (26, 34)
+Added Edge: (26, 36)
+Added Edge: (26, 37)
+Added Edge: (27, 29)
+Added Edge: (27, 30)
+Added Edge: (27, 35)
+Added Edge: (27, 38)
+Added Edge: (27, 39)
+Added Edge: (28, 29)
+Added Edge: (28, 30)
+Added Edge: (28, 32)
+Added Edge: (28, 35)
+Added Edge: (28, 36)
+Added Edge: (29, 31)
+Added Edge: (29, 32)
+Added Edge: (29, 33)
+Added Edge: (29, 34)
+Added Edge: (29, 36)
+Added Edge: (29, 38)
+Added Edge: (30, 32)
+Added Edge: (30, 33)
+Added Edge: (30, 34)
+Added Edge: (30, 36)
+Added Edge: (30, 37)
+Added Edge: (30, 38)
+Added Edge: (30, 39)
+Added Edge: (31, 32)
+Added Edge: (31, 33)
+Added Edge: (31, 34)
+Added Edge: (31, 36)
+Added Edge: (31, 37)
+Added Edge: (32, 33)
+Added Edge: (32, 34)
+Added Edge: (32, 35)
+Added Edge: (32, 39)
+Added Edge: (33, 36)
+Added Edge: (33, 38)
+Added Edge: (34, 36)
+Added Edge: (34, 37)
+Added Edge: (34, 38)
+Added Edge: (34, 39)
+Added Edge: (35, 36)
+Added Edge: (35, 37)
+Added Edge: (36, 38)
+Added Edge: (37, 39)
+Added Edge: (38, 39)
+========================

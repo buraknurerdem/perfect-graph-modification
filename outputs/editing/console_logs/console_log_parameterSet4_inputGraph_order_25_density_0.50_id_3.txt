@@ -1,0 +1,107 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:483
+Odd anti hole count:56
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 139.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 539 rows, 300 columns, and 7125 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.65 ticks)
+Probing time = 0.00 sec. (0.16 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 539 rows, 300 columns, and 7125 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.65 ticks)
+Probing time = 0.00 sec. (0.16 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.02 sec. (20.84 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          139.0000        0.0000           100.00%
+      0     0       18.5014    95      139.0000       18.5014      476   86.69%
+In Relaxation Callback. Heuristic solution found with objective value: 28. Prev. Best Sol: 139
+      0     0       18.6668    97      139.0000      Cuts: 13      569   86.57%
+      0     0  -1.00000e+75     0      139.0000       18.6668      569   86.57%
+      0     0       18.7111    92       28.0000   ZeroHalf: 7      626   33.17%
+      0     0       18.7233    96       28.0000   ZeroHalf: 1      657   33.13%
+      0     0       18.7310    96       28.0000   ZeroHalf: 1      687   33.10%
+      0     0       18.7483    94       28.0000   ZeroHalf: 3      735   33.04%
+      0     0       18.7663    98       28.0000   ZeroHalf: 3      783   32.98%
+      0     0       18.7717    95       28.0000   ZeroHalf: 1      807   32.96%
+      0     0       18.7824    97       28.0000   ZeroHalf: 1      843   32.92%
+      0     0       18.8063    95       28.0000       Cuts: 3      900   32.83%
+      0     0       18.8230    96       28.0000   ZeroHalf: 1      936   32.78%
+      0     0       18.8294    98       28.0000   ZeroHalf: 1      967   32.75%
+      0     0       18.8626    88       28.0000   ZeroHalf: 2     1022   32.63%
+      0     0       18.9355    98       28.0000   ZeroHalf: 3     1109   32.37%
+*     0+    0                           27.0000       18.9355            29.87%
+      0     0       18.9609    91       27.0000   ZeroHalf: 2     1171   27.44%
+      0     0       18.9706    94       27.0000   ZeroHalf: 2     1206   27.44%
+*     0+    0                           24.0000       19.5901            18.37%
+      0     2       18.9706    94       24.0000       19.5901     1206   18.37%
+Elapsed time = 0.77 sec. (498.97 ticks, tree = 0.02 MB, solutions = 3)
+    767   464       21.8655    94       24.0000       20.4347    76788   14.86%
+   1993  1083       22.5516    86       24.0000       21.3912   184108   10.87%
+   3276  1468       22.3305    79       24.0000       21.6365   249895    9.85%
+   4929  2030       22.5249    89       24.0000       21.9300   390991    8.62%
+   6650  2239        cutoff             24.0000       22.1562   486916    7.68%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 539 rows, 300 columns, and 7125 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.76 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 539 rows, 300 columns, and 7125 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.76 ticks)
+Represolve time = 0.02 sec. (11.18 ticks)
+   7490     0       19.0025    97       24.0000      Fract: 1   584383    7.07%
+   7490     0       19.0275    96       24.0000       Cuts: 2   584443    7.07%
+   7490     0       19.0439    91       24.0000       Cuts: 4   584492    7.07%
+   7490     0       19.0534    89       24.0000   ZeroHalf: 5   584543    7.07%
+   7490     0       19.0724    96       24.0000   ZeroHalf: 4   584615    7.07%
+   7490     0       19.0813   100       24.0000   ZeroHalf: 6   584665    7.07%
+   7490     2       19.0833   100       24.0000       22.3024   584665    7.07%
+   7493     5       19.7021    96       24.0000       22.3024   585346    7.07%
+   7509    14       20.5304    81       24.0000       22.3024   586881    7.07%
+   8002   249       22.8177    70       24.0000       22.3024   616304    7.07%
+  16482  2023        cutoff             24.0000       22.4034   957504    6.65%
+Elapsed time = 9.15 sec. (4950.25 ticks, tree = 4.97 MB, solutions = 3)
+
+Zero-half cuts applied:  18
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  3
+User cuts applied:  212
+
+Root node processing (before b&c):
+  Real time             =    0.76 sec. (498.25 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    8.71 sec. (4590.67 ticks)
+  Sync time (average)   =    4.34 sec.
+  Wait time (average)   =    0.05 sec.
+                          ------------
+Total (root+branch&cut) =    9.47 sec. (5088.93 ticks)
+STATUS: Optimal
+OBJ VALUE: 24
+Explored Number of nodes: 18388
+Unexplored Number of nodes: 0

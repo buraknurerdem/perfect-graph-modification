@@ -1,0 +1,75 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 222.000000 after 0.00 sec. (0.01 ticks)
+Found incumbent of value 78.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.03 sec. (0.03 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           78.0000        0.0000           100.00%
+      0     0       12.6894    62       78.0000        0.0000        0  100.00%
+      0     2       12.6894    62       78.0000       12.6894        0   83.73%
+Elapsed time = 0.12 sec. (26.62 ticks, tree = 0.02 MB, solutions = 1)
+*   403   329      integral     0       20.0000       12.7872     9555   36.06%
+*   410   311      integral     0       18.0000       12.7872     9282   28.96%
+*   953   466      integral     0       17.0000       13.3185    21455   21.66%
+   2444  1016        cutoff             17.0000       14.4461    56536   15.02%
+   5429  2067        cutoff             17.0000       14.9694   119847   11.94%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.04 ticks)
+Represolve time = 0.00 sec. (2.78 ticks)
+   7535    25       14.0000    26       17.0000       15.1970   177592   10.61%
+  11429  1808       15.6105    45       17.0000       15.1970   252744   10.61%
+  15576  2222        cutoff             17.0000       15.2893   337245   10.06%
+
+User cuts applied:  732
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (26.50 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    1.50 sec. (1318.63 ticks)
+  Sync time (average)   =    0.71 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.62 sec. (1345.14 ticks)
+STATUS: Optimal
+OBJ VALUE: 17
+Explored Number of nodes: 18474
+Unexplored Number of nodes: 0

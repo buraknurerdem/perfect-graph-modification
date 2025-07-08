@@ -1,0 +1,65 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                               25
+ODD_HOLE_TERMINATION_PERCENTAGE: 999
+Expected Value: 147
+ODD_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 60.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 60 columns, and 0 nonzeros.
+Reduced MIP has 60 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Probing time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 60 columns, and 0 nonzeros.
+Reduced MIP has 60 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Probing time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.01 sec. (0.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           60.0000        0.0000           100.00%
+      0     0        9.0000    16       60.0000        0.0000        0  100.00%
+In Relaxation Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 60
+In Relaxation Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 60
+      0     0  -1.00000e+75     0       60.0000        9.0357        0   84.94%
+      0     2        9.0000    16       18.0000        9.0357        0   49.80%
+Elapsed time = 0.23 sec. (8.25 ticks, tree = 0.02 MB, solutions = 1)
+In Relaxation Callback. Heuristic solution found with objective value: 16. Prev. Best Sol: 18
+In Relaxation Callback. Heuristic solution found with objective value: 16. Prev. Best Sol: 18
+In Relaxation Callback. Heuristic solution found with objective value: 16. Prev. Best Sol: 18
+In Relaxation Callback. Heuristic solution found with objective value: 16. Prev. Best Sol: 18
+In Relaxation Callback. Heuristic solution found with objective value: 14. Prev. Best Sol: 16
+In Relaxation Callback. Heuristic solution found with objective value: 14. Prev. Best Sol: 16
+In Relaxation Callback. Heuristic solution found with objective value: 15. Prev. Best Sol: 16
+In Relaxation Callback. Heuristic solution found with objective value: 15. Prev. Best Sol: 16
+*   290   194      integral     0       13.0000       10.0000     3062   23.08%
+
+User cuts applied:  677
+
+Root node processing (before b&c):
+  Real time             =    0.08 sec. (8.16 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.33 sec. (25.71 ticks)
+  Sync time (average)   =    0.16 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.41 sec. (33.87 ticks)
+STATUS: Optimal
+OBJ VALUE: 13
+Explored Number of nodes: 772
+Unexplored Number of nodes: 0

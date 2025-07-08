@@ -1,0 +1,78 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:483
+Odd anti hole count:56
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 139.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 539 rows, 300 columns, and 7125 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.65 ticks)
+Probing time = 0.00 sec. (0.16 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 539 rows, 300 columns, and 7125 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.65 ticks)
+Probing time = 0.00 sec. (0.16 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.03 sec. (20.84 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          139.0000        0.0000           100.00%
+      0     0       18.5014    95      139.0000       18.5014      476   86.69%
+      0     0       18.6668    97      139.0000      Cuts: 13      569   86.57%
+      0     0       18.7087    94      139.0000   ZeroHalf: 6      625   86.54%
+      0     0       18.7163    94      139.0000   ZeroHalf: 3      651   86.54%
+      0     0       18.7312    95      139.0000  ZeroHalf: 13      712   86.52%
+      0     0       18.7374    94      139.0000   ZeroHalf: 1      742   86.52%
+      0     0       18.7432    92      139.0000   ZeroHalf: 1      784   86.52%
+      0     0       18.7537    95      139.0000       Cuts: 2      852   86.51%
+      0     0       18.7646    97      139.0000   ZeroHalf: 2      903   86.50%
+      0     0       18.7679    97      139.0000   ZeroHalf: 2      934   86.50%
+      0     0       18.7710    98      139.0000   ZeroHalf: 1      956   86.50%
+*     0+    0                           26.0000       18.7710            27.80%
+      0     0       18.7999    97       26.0000   ZeroHalf: 3     1028   24.65%
+      0     0       18.8055    98       26.0000   ZeroHalf: 4     1064   24.65%
+*     0+    0                           24.0000       19.5901            18.37%
+      0     2       18.8055    98       24.0000       19.5901     1064   18.37%
+Elapsed time = 0.67 sec. (504.94 ticks, tree = 0.02 MB, solutions = 3)
+    890   508        cutoff             24.0000       20.4827    82544   14.66%
+   2262  1124       22.1590    83       24.0000       21.5875   192409   10.05%
+   4000  1604       22.8125    40       24.0000       21.9606   297592    8.50%
+   5989  1852        cutoff             24.0000       22.2412   421804    7.33%
+   8495   816       22.9746    76       24.0000       22.5164   568351    6.18%
+
+Cover cuts applied:  1
+Zero-half cuts applied:  11
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  1
+User cuts applied:  334
+
+Root node processing (before b&c):
+  Real time             =    0.65 sec. (504.27 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    1.26 sec. (1229.17 ticks)
+  Sync time (average)   =    0.44 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.91 sec. (1733.44 ticks)
+STATUS: Optimal
+OBJ VALUE: 24
+Explored Number of nodes: 9205
+Unexplored Number of nodes: 0

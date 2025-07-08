@@ -1,0 +1,117 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:718
+Odd anti hole count:61
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 140.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 779 rows, 300 columns, and 9561 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.18 ticks)
+Probing time = 0.00 sec. (0.22 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 779 rows, 300 columns, and 9561 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.18 ticks)
+Probing time = 0.00 sec. (0.22 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+In Candidate Callback. Heuristic solution found with objective value: 50. Prev. Best Sol: 140
+In Candidate Callback. Heuristic solution found with objective value: 42. Prev. Best Sol: 140
+Root relaxation solution time = 0.06 sec. (70.11 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          140.0000        0.0000           100.00%
+      0     0       22.8384   161      140.0000       22.8384     1264   83.69%
+In Candidate Callback. Heuristic solution found with objective value: 35. Prev. Best Sol: 140
+In Candidate Callback. Heuristic solution found with objective value: 35. Prev. Best Sol: 140
+In Relaxation Callback. Heuristic solution found with objective value: 32. Prev. Best Sol: 140
+In Candidate Callback. Heuristic solution found with objective value: 55. Prev. Best Sol: 140
+In Candidate Callback. Heuristic solution found with objective value: 36. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 39. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 37. Prev. Best Sol: 55
+      0     0       22.9054   155       55.0000      Fract: 1     1386   58.35%
+      0     0  -1.00000e+75     0       55.0000       22.9054     1386   58.35%
+      0     0  -1.00000e+75     0       55.0000       22.9054     1386   58.35%
+In Candidate Callback. Heuristic solution found with objective value: 36. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 34. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 36. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 38. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 45. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 35. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 36. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 35. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 38. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 35. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 29. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 31. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 33. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 43. Prev. Best Sol: 55
+In Candidate Callback. Heuristic solution found with objective value: 33. Prev. Best Sol: 36
+*     0+    0                           29.0000       22.9054            21.02%
+*     0+    0                           28.0000       22.9632            17.99%
+      0     2       22.9054   155       28.0000       23.3035     1386   16.77%
+Elapsed time = 0.77 sec. (570.86 ticks, tree = 0.02 MB, solutions = 3)
+    255   158       26.7295    91       28.0000       23.9244    34104   14.56%
+   1060   617        cutoff             28.0000       24.5786   109459   12.22%
+   1957  1025       26.8730   164       28.0000       25.3412   166316    9.50%
+   3022  1505       25.8050   104       28.0000       25.5548   226505    8.73%
+   4079  2184       26.8382   120       28.0000       25.7349   317507    8.09%
+   5168  2629       26.7688    95       28.0000       25.8669   397298    7.62%
+   6463  3142       26.8170    99       28.0000       25.9930   474597    7.17%
+   7512  3402       26.8608   121       28.0000       26.0431   526194    6.99%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 779 rows, 300 columns, and 9561 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.33 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 779 rows, 300 columns, and 9561 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.32 ticks)
+Represolve time = 0.01 sec. (13.41 ticks)
+   7517     0       22.9249   150       28.0000      Fract: 1   565543    6.81%
+   7517     0       22.9618   154       28.0000      Cuts: 24   565669    6.81%
+   7517     0       22.9883   155       28.0000      Fract: 1   565767    6.81%
+   7517     0       23.0082   153       28.0000       Cuts: 2   565869    6.81%
+   7517     2       23.0082   153       28.0000       26.0940   565869    6.81%
+   7574    45       24.7315   144       28.0000       26.0940   575150    6.81%
+Elapsed time = 9.97 sec. (4459.58 ticks, tree = 0.03 MB, solutions = 3)
+  10274  1458       26.9984    92       28.0000       26.0940   791988    6.81%
+  14603  3159        cutoff             28.0000       26.0940  1095746    6.81%
+  19560  3647        cutoff             28.0000       26.3259  1406333    5.98%
+
+Zero-half cuts applied:  2
+Gomory fractional cuts applied:  5
+User cuts applied:  35
+
+Root node processing (before b&c):
+  Real time             =    0.69 sec. (569.96 ticks)
+Parallel b&c, 24 threads:
+  Real time             =   19.42 sec. (7588.79 ticks)
+  Sync time (average)   =   11.12 sec.
+  Wait time (average)   =    0.28 sec.
+                          ------------
+Total (root+branch&cut) =   20.12 sec. (8158.75 ticks)
+STATUS: Optimal
+OBJ VALUE: 28
+Explored Number of nodes: 25356
+Unexplored Number of nodes: 0

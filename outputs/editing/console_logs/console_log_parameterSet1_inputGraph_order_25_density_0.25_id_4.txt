@@ -1,0 +1,58 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 75.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.03 sec. (0.03 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           75.0000        0.0000           100.00%
+      0     0       13.7962    67       75.0000        0.0000        0  100.00%
+      0     2       13.7962    67       75.0000       13.7964        0   81.60%
+Elapsed time = 0.30 sec. (43.03 ticks, tree = 0.02 MB, solutions = 1)
+*   370   313      integral     0       20.0000       14.0990     8165   29.51%
+*   790   515      integral     0       19.0000       14.0990    20553   25.79%
+   2211  1287       17.6667    41       19.0000       15.1300    56649   20.37%
+*  2288  1240      integral     0       18.0000       15.1300    55300   15.94%
+*  3012   923      integral     0       17.0000       15.7705    75474    7.23%
+
+User cuts applied:  1349
+
+Root node processing (before b&c):
+  Real time             =    0.13 sec. (42.91 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.69 sec. (365.32 ticks)
+  Sync time (average)   =    0.34 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.82 sec. (408.23 ticks)
+STATUS: Optimal
+OBJ VALUE: 17
+Explored Number of nodes: 3203
+Unexplored Number of nodes: 0

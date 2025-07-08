@@ -1,0 +1,96 @@
+========================
+TIME_LIMIT_SECONDS: 900
+ODD_HOLE_TERMINATION_PERCENTAGE: 999
+N_THREADS: 24
+IS_RUNNING_HEURISTIC_ON_CANDIDATE: 1
+IS_RUNNING_HEURISTIC_ON_RELAXATION: 0
+ADD_ALL_AT_START: 0
+========================
+Wall-Clock Runtime (ms): 142
+Calculated Odd Hole Termination Batch Size: 0
+Total Time of All Workers in OddHoleAlg (nano): 3129079
+Total Time of All Workers in OddHoleAlg (ms): 3
+OddHoleAlg calls: 18
+Number of Found Odd-Holes: 1407
+Number of Found Odd Anti-Holes: 63
+Is Optimal? (1e-6): 1
+Optimality Gap: 0
+Objective Value: 15
+Number of Feasible Solutions Found: 9
+Number of Times Heuristic is Called: 7
+Total number of added OH and OHbar Cuts: 1470
+Number of Explored B&C tree nodes: 0
+Number of Unexplored B&C tree nodes: 0
+========================
+Input Graph:
+Number of Vertices: 20
+Erdos Renyi p Parameter: 0.5
+Number of Edges: 92
+Expected No of Odd Holes: 195
+Expected No of Odd Anti Holes: 13
+ODD_HOLE_TERMINATION_BATCH_SIZE: 0
+Graph Density: 0.484211
+0,1,1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,0,1,
+1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,
+1,0,0,1,1,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,
+0,1,1,0,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,
+1,1,1,0,0,1,1,0,0,1,0,1,0,1,1,1,1,0,1,0,
+0,0,0,1,1,0,0,0,0,1,1,0,0,1,0,1,0,0,1,1,
+1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,
+0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,
+1,0,0,1,0,0,1,0,0,0,1,1,1,0,0,1,0,1,0,0,
+0,0,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,
+0,1,0,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,0,1,
+0,1,1,1,1,0,0,1,1,0,0,0,1,1,1,1,1,0,0,0,
+1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,1,1,0,
+0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,
+1,1,0,1,1,0,0,0,0,0,1,1,0,0,0,0,1,0,1,0,
+1,1,0,0,1,1,0,1,1,0,0,1,1,0,0,0,1,0,1,1,
+1,0,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,
+0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,0,0,0,1,0,
+0,0,1,1,1,1,0,1,0,0,0,0,1,1,1,1,0,1,0,1,
+1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,1,1,0,1,0,
+========================
+Output Graph: 
+Number of Vertices: 20
+Number of Edges: 107
+Graph Density: 0.563158
+0,1,1,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,0,1,
+1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,
+1,0,0,1,1,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0,
+0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,
+1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,1,0,1,0,
+1,0,0,1,1,0,0,0,0,1,1,1,0,1,0,1,0,0,1,1,
+1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,
+0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,
+1,0,0,1,0,0,1,0,0,0,1,1,1,0,0,1,0,1,0,0,
+0,0,1,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,
+0,1,1,1,1,1,1,0,1,1,0,0,1,0,1,0,1,1,0,1,
+0,1,1,1,1,1,0,1,1,0,0,0,1,1,1,1,1,1,0,1,
+1,1,0,1,0,0,1,1,1,1,1,1,0,1,0,1,0,1,1,0,
+0,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,1,1,1,
+1,1,0,1,1,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,
+1,1,1,0,1,1,0,1,1,0,0,1,1,0,1,0,1,1,1,1,
+1,0,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,
+1,0,0,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,1,0,
+0,0,1,1,1,1,0,1,0,0,0,0,1,1,1,1,0,1,0,1,
+1,0,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,0,1,0,
+Is Output Graph Empty or Complete?: 0
+Ratio of Added Edges Over Added + Removed Edges: 1
+Changes from Input to Output: 
+Added Edge: (0, 5)
+Added Edge: (0, 17)
+Added Edge: (2, 10)
+Added Edge: (2, 15)
+Added Edge: (3, 4)
+Added Edge: (4, 10)
+Added Edge: (5, 11)
+Added Edge: (6, 12)
+Added Edge: (10, 12)
+Added Edge: (10, 17)
+Added Edge: (11, 17)
+Added Edge: (11, 19)
+Added Edge: (12, 13)
+Added Edge: (14, 15)
+Added Edge: (15, 17)
+========================

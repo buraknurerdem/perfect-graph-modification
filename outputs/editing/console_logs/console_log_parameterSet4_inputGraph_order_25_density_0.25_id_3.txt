@@ -1,0 +1,80 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:600
+Odd anti hole count:0
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 86.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 600 rows, 300 columns, and 11239 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.47 ticks)
+Probing time = 0.00 sec. (0.09 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 600 rows, 300 columns, and 11239 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (2.47 ticks)
+Probing time = 0.00 sec. (0.09 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.03 sec. (21.53 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           86.0000        0.0000           100.00%
+      0     0       15.3716    86       86.0000       15.3716      433   82.13%
+In Relaxation Callback. Heuristic solution found with objective value: 26. Prev. Best Sol: 86
+      0     0       15.5839    79       86.0000      Cuts: 22      497   81.88%
+      0     0  -1.00000e+75     0       86.0000       15.5839      497   81.88%
+      0     0       15.6570    80       26.0000      Cuts: 18      552   39.78%
+In Relaxation Callback. Heuristic solution found with objective value: 22. Prev. Best Sol: 26
+      0     0       15.6848    82       26.0000  ZeroHalf: 16      589   39.67%
+      0     0  -1.00000e+75     0       26.0000       15.6848      589   39.67%
+      0     0       15.7140    83       22.0000  ZeroHalf: 12      632   28.57%
+      0     0       15.7251    81       22.0000   ZeroHalf: 2      659   28.52%
+      0     0       15.7703    84       22.0000   ZeroHalf: 3      737   28.32%
+      0     0       15.8078    86       22.0000   ZeroHalf: 3      788   27.91%
+      0     0       15.8376    83       22.0000   ZeroHalf: 8      825   27.91%
+      0     0       15.8453    83       22.0000   ZeroHalf: 2      852   27.91%
+      0     0       15.8658    84       22.0000   ZeroHalf: 2      890   27.88%
+      0     0       15.8723    82       22.0000   ZeroHalf: 1      905   27.85%
+      0     0       15.8847    80       22.0000   ZeroHalf: 1      934   27.80%
+      0     0       15.8904    80       22.0000   ZeroHalf: 3      969   27.77%
+      0     0       15.8939    83       22.0000   ZeroHalf: 1      991   27.75%
+      0     0       15.9169    82       22.0000   ZeroHalf: 6     1049   27.65%
+      0     0       15.9306    81       22.0000   ZeroHalf: 1     1071   25.23%
+      0     0       15.9411    87       22.0000   ZeroHalf: 2     1104   25.23%
+      0     2       15.9411    87       22.0000       16.4492     1104   25.23%
+Elapsed time = 0.73 sec. (587.77 ticks, tree = 0.02 MB, solutions = 1)
+In Relaxation Callback. Heuristic solution found with objective value: 21. Prev. Best Sol: 22
+*   282+  149                           19.0000       16.4602            13.37%
+
+Zero-half cuts applied:  21
+Gomory fractional cuts applied:  1
+User cuts applied:  355
+
+Root node processing (before b&c):
+  Real time             =    0.72 sec. (586.99 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.79 sec. (226.06 ticks)
+  Sync time (average)   =    0.57 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.51 sec. (813.04 ticks)
+STATUS: Optimal
+OBJ VALUE: 19
+Explored Number of nodes: 709
+Unexplored Number of nodes: 0

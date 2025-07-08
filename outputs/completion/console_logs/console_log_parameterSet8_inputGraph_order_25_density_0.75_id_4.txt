@@ -1,0 +1,102 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                               25
+ODD_HOLE_TERMINATION_PERCENTAGE: 999
+Expected Value: 147
+ODD_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:118
+Odd anti hole count:130
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 74.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 248 rows, 74 columns, and 1582 nonzeros.
+Reduced MIP has 74 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.46 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 248 rows, 74 columns, and 1582 nonzeros.
+Reduced MIP has 74 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.46 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+In Candidate Callback. Heuristic solution found with objective value: 21. Prev. Best Sol: 74
+In Candidate Callback. Heuristic solution found with objective value: 20. Prev. Best Sol: 74
+In Candidate Callback. Heuristic solution found with objective value: 24. Prev. Best Sol: 74
+In Candidate Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 74
+In Candidate Callback. Heuristic solution found with objective value: 24. Prev. Best Sol: 74
+Root relaxation solution time = 0.01 sec. (2.40 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           74.0000        0.0000           100.00%
+      0     0       11.9318    49       74.0000       11.9318      131   83.88%
+      0     0  -1.00000e+75     0       74.0000       11.9318      131   83.88%
+      0     0  -1.00000e+75     0       74.0000       11.9318      131   83.88%
+In Candidate Callback. Heuristic solution found with objective value: 20. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 20. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 24. Prev. Best Sol: 74
+In Relaxation Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 21
+      0     0       12.5179    48       21.0000      Cuts: 27      170   40.39%
+      0     0  -1.00000e+75     0       21.0000       12.5179      170   40.39%
+      0     0  -1.00000e+75     0       21.0000       12.5179      170   40.39%
+      0     0       12.5691    47       19.0000       Cuts: 9      186   33.85%
+In Candidate Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 20. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 21
+      0     0       12.6197    47       19.0000       Cuts: 5      203   33.58%
+In Candidate Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 21
+In Candidate Callback. Heuristic solution found with objective value: 20. Prev. Best Sol: 21
+      0     0       12.6545    48       19.0000   ZeroHalf: 3      215   33.40%
+In Candidate Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 19
+In Candidate Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 19
+In Relaxation Callback. Heuristic solution found with objective value: 18. Prev. Best Sol: 19
+      0     0       12.6971    48       19.0000   ZeroHalf: 5      237   33.17%
+      0     0  -1.00000e+75     0       19.0000       12.6971      237   33.17%
+      0     0       12.7433    46       18.0000   ZeroHalf: 5      254   29.20%
+      0     0       12.7766    49       18.0000   ZeroHalf: 5      264   29.02%
+      0     0       12.8113    51       18.0000   ZeroHalf: 8      285   28.83%
+      0     0       12.8470    48       18.0000   ZeroHalf: 5      302   28.63%
+      0     0       12.8594    49       18.0000   ZeroHalf: 2      314   28.56%
+      0     0       12.8646    49       18.0000   ZeroHalf: 1      322   28.53%
+      0     0       12.8899    48       18.0000   ZeroHalf: 3      338   28.39%
+      0     0       12.9056    50       18.0000   ZeroHalf: 1      353   28.30%
+      0     0       12.9237    51       18.0000   ZeroHalf: 5      372   28.20%
+      0     0       12.9264    52       18.0000   ZeroHalf: 3      382   28.19%
+      0     0       12.9287    52       18.0000   ZeroHalf: 2      398   28.17%
+In Candidate Callback. Heuristic solution found with objective value: 17. Prev. Best Sol: 18
+      0     0       12.9372    52       18.0000   ZeroHalf: 2      414   28.13%
+      0     0  -1.00000e+75     0       18.0000       12.9372      414   28.13%
+      0     0       12.9408    50       17.0000   ZeroHalf: 2      432   23.88%
+*     0+    0                           16.0000       12.9408            19.12%
+      0     0        cutoff             16.0000       16.0000      436    0.00%
+Elapsed time = 0.30 sec. (97.72 ticks, tree = 0.01 MB, solutions = 2)
+
+Zero-half cuts applied:  19
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.30 sec. (97.73 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.30 sec. (97.73 ticks)
+STATUS: Optimal
+OBJ VALUE: 16
+Explored Number of nodes: 0
+Unexplored Number of nodes: 0

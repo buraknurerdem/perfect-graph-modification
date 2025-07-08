@@ -1,0 +1,120 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    20
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:110
+Odd anti hole count:0
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 50.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 110 rows, 190 columns, and 2000 nonzeros.
+Reduced MIP has 190 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.45 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 110 rows, 190 columns, and 2000 nonzeros.
+Reduced MIP has 190 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.45 ticks)
+Probing time = 0.00 sec. (0.05 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+In Candidate Callback. Heuristic solution found with objective value: 12. Prev. Best Sol: 50
+In Candidate Callback. Heuristic solution found with objective value: 12. Prev. Best Sol: 50
+Root relaxation solution time = 0.00 sec. (1.33 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           50.0000        0.0000           100.00%
+      0     0        6.9000    25       50.0000        6.9000      107   86.20%
+In Candidate Callback. Heuristic solution found with objective value: 14. Prev. Best Sol: 50
+In Candidate Callback. Heuristic solution found with objective value: 14. Prev. Best Sol: 50
+In Candidate Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 50
+In Candidate Callback. Heuristic solution found with objective value: 19. Prev. Best Sol: 50
+In Candidate Callback. Heuristic solution found with objective value: 13. Prev. Best Sol: 50
+In Relaxation Callback. Heuristic solution found with objective value: 11. Prev. Best Sol: 50
+      0     0        7.1964    29       50.0000      Cuts: 21      132   85.61%
+      0     0  -1.00000e+75     0       50.0000        7.1964      132   85.61%
+      0     0  -1.00000e+75     0       50.0000        7.1964      132   85.61%
+In Candidate Callback. Heuristic solution found with objective value: 9. Prev. Best Sol: 11
+      0     0        7.2976    29       11.0000      Cuts: 20      149   33.66%
+      0     0  -1.00000e+75     0       11.0000        7.2976      149   33.66%
+In Candidate Callback. Heuristic solution found with objective value: 10. Prev. Best Sol: 13
+In Candidate Callback. Heuristic solution found with objective value: 9. Prev. Best Sol: 13
+In Candidate Callback. Heuristic solution found with objective value: 9. Prev. Best Sol: 13
+In Candidate Callback. Heuristic solution found with objective value: 11. Prev. Best Sol: 13
+In Candidate Callback. Heuristic solution found with objective value: 10. Prev. Best Sol: 13
+In Candidate Callback. Heuristic solution found with objective value: 9. Prev. Best Sol: 13
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 0 rows and 68 columns.
+Reduced MIP has 110 rows, 122 columns, and 1593 nonzeros.
+Reduced MIP has 122 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.41 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 110 rows, 122 columns, and 1593 nonzeros.
+Reduced MIP has 122 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.39 ticks)
+Represolve time = 0.00 sec. (2.33 ticks)
+Probing time = 0.00 sec. (0.04 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.00 sec. (1.36 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            9.0000        7.2976            18.92%
+      0     0        7.2976    29        9.0000        7.2976      233   18.92%
+      0     0        7.3926    30        9.0000      Cuts: 14      256   17.86%
+      0     0        7.4154    34        9.0000      Cuts: 17      268   17.61%
+      0     0        7.4592    36        9.0000       Cuts: 3      287   17.12%
+      0     0        7.4683    34        9.0000   ZeroHalf: 2      299   17.02%
+      0     0        7.4695    35        9.0000       Cuts: 3      310   17.01%
+      0     0        7.4858    34        9.0000       Cuts: 5      325   16.82%
+      0     0        7.5017    33        9.0000   ZeroHalf: 2      337   16.65%
+      0     0        7.5118    36        9.0000   ZeroHalf: 6      355   16.54%
+      0     0        7.5198    37        9.0000       Cuts: 2      364   16.45%
+      0     0        7.5256    34        9.0000   ZeroHalf: 1      373   16.38%
+      0     0        7.5299    37        9.0000       Cuts: 4      390   16.33%
+      0     0        7.5320    35        9.0000   ZeroHalf: 3      400   16.31%
+      0     0        7.5372    33        9.0000       Cuts: 2      416   16.25%
+      0     0        7.5415    33        9.0000       Cuts: 2      429   16.21%
+      0     0        7.5426    36        9.0000   ZeroHalf: 2      438   16.19%
+      0     0        7.5461    33        9.0000   ZeroHalf: 1      459   16.15%
+      0     0        7.5477    35        9.0000   ZeroHalf: 1      472   16.14%
+*     0+    0                            8.0000        7.5477             5.65%
+      0     0        cutoff              8.0000        8.0000      472    0.00%
+Elapsed time = 0.36 sec. (77.35 ticks, tree = 0.01 MB, solutions = 4)
+
+Zero-half cuts applied:  16
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  1
+User cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0.36 sec. (77.36 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.36 sec. (77.36 ticks)
+STATUS: Optimal
+OBJ VALUE: 8
+Explored Number of nodes: 0
+Unexplored Number of nodes: 0

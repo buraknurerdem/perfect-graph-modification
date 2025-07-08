@@ -1,0 +1,84 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    30
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 89.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.10 sec. (0.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           89.0000        0.0000           100.00%
+      0     0       16.3574    78       89.0000        0.0000        0  100.00%
+      0     2       16.3574    78       89.0000       16.3574        0   81.62%
+Elapsed time = 0.18 sec. (111.69 ticks, tree = 0.02 MB, solutions = 1)
+*   676   594      integral     0       30.0000       16.6369    21865   44.54%
+    900   688       20.1285    54       30.0000       16.6369    29249   44.54%
+*  1204   930      integral     0       25.0000       16.6369    40464   33.45%
+   1663  1034       20.3515    68       25.0000       17.4247    63122   30.30%
+*  1787  1055      integral     0       24.0000       17.4247    64369   27.40%
+   2151  1060       21.9921    74       24.0000       17.5152    73770   27.02%
+*  2164  1130      integral     0       22.0000       17.5533    79235   20.21%
+   2640   914        cutoff             22.0000       17.8763    99705   18.74%
+   3117  1209       20.2544    61       22.0000       18.0195   118582   18.09%
+   3605  1470       20.7933    66       22.0000       18.1856   138501   17.34%
+   4104  1892       19.3584    78       22.0000       18.3364   165634   16.65%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Represolve time = 0.01 sec. (10.31 ticks)
+   5328   289        cutoff             22.0000       18.5135   223382   15.85%
+Elapsed time = 3.90 sec. (2881.98 ticks, tree = 1.52 MB, solutions = 5)
+   7798  1859        cutoff             22.0000       18.5135   309114   15.85%
+*  9612  2829      integral     0       21.0000       18.6200   364658   11.33%
+   9996  1595        cutoff             21.0000       18.6827   383404   11.03%
+  11994  1985       19.9344    67       21.0000       19.0791   456270    9.15%
+  14758  1274        cutoff             21.0000       19.4762   547744    7.26%
+
+User cuts applied:  3976
+
+Root node processing (before b&c):
+  Real time             =    0.17 sec. (111.52 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    9.34 sec. (6957.56 ticks)
+  Sync time (average)   =    4.84 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    9.52 sec. (7069.08 ticks)
+STATUS: Optimal
+OBJ VALUE: 21
+Explored Number of nodes: 15990
+Unexplored Number of nodes: 0

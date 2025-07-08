@@ -1,0 +1,114 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    20
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,1,0,0,0,
+0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,
+0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,
+1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,
+0,1,0,0,0,0,0,1,0,1,0,1,1,0,0,0,1,0,0,1,
+1,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,
+1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,
+0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,
+0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,
+0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,
+0,0,0,1,1,1,0,0,1,0,1,0,1,0,0,1,0,0,0,0,
+1,0,1,0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,
+0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,
+1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,
+0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,
+1,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,
+0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,
+0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,
+0,1,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
+
+0,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,
+1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,1,0,1,
+1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,0,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,
+0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,0,1,1,0,0,1,1,1,1,0,1,1,1,1,1,
+1,1,1,1,0,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,
+1,1,1,0,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,
+1,1,1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,0,1,
+0,1,1,0,1,0,1,0,1,0,1,1,1,1,1,1,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,1,1,1,1,
+0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,
+1,0,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,1,1,
+1,1,1,1,1,0,1,1,0,1,0,1,0,1,0,1,1,1,1,1,
+1,0,1,1,1,1,1,1,0,1,0,1,1,1,1,0,0,1,1,0,
+1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0,1,1,1,
+1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1,
+1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,
+0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,
+
+    Time: 2025-02-14 20:03:26
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_MIP_Limits_Solutions                    1
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x20
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Tried aggregator 1 time.
+MIP Presolve eliminated 2 rows and 0 columns.
+Reduced MIP has 97 rows, 107 columns, and 818 nonzeros.
+Reduced MIP has 107 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.26 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 97 rows, 107 columns, and 818 nonzeros.
+Reduced MIP has 107 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.22 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Clique table members: 1.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.00 sec. (0.21 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       13.3750    30                     12.0000       34         
+      0     0       14.0000    25                    Cuts: 17       55         
+      0     0       14.1312    34                    Cuts: 13       69         
+      0     0       14.3684    36                    Cuts: 18       85         
+      0     0       14.4000    33                ZeroHalf: 15       92         
+      0     0       14.5000    23                    Cuts: 21       98         
+      0     0       14.6000    24                     Cuts: 6      107         
+      0     0       15.0000    20                ZeroHalf: 14      114         
+      0     0       15.0000    13                    Cuts: 13      121         
+      0     0       15.0000    25                    Cuts: 15      129         
+      0     0       15.0000    22                    Cuts: 16      151         
+*     0+    0                           20.0000       15.0000            25.00%
+
+Zero-half cuts applied:  15
+Lift and project cuts applied:  1
+User cuts applied:  92
+
+Root node processing (before b&c):
+  Real time             =    0.14 sec. (27.65 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.14 sec. (27.65 ticks)
+STATUS: Feasible
+OBJ VALUE: 20
+Explored Number of nodes: 0
+Unexplored Number of nodes: 1
+
+
+
+Status:Feasible
+Program finished OK!
+    Time: 2025-02-14 20:03:26

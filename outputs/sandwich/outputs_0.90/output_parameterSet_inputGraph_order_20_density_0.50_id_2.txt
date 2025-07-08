@@ -1,0 +1,159 @@
+========================
+TIME_LIMIT_SECONDS: 900
+ODD_HOLE_TERMINATION_PERCENTAGE: 999
+N_THREADS: 24
+IS_RUNNING_HEURISTIC_ON_CANDIDATE: 
+IS_RUNNING_HEURISTIC_ON_RELAXATION: 
+ADD_ALL_AT_START: 
+========================
+Wall-Clock Runtime (ms): 8
+Calculated Odd Hole Termination Batch Size: 0
+Total Time of All Workers in OddHoleAlg (nano): 100113
+Total Time of All Workers in OddHoleAlg (ms): 0
+OddHoleAlg calls: 2
+Number of Found Odd-Holes: 0
+Number of Found Odd Anti-Holes: 0
+Number of Feasible Solutions Found: 1
+Number of Times Heuristic is Called: 0
+Total number of added OH and OHbar Cuts: 0
+Number of Explored B&C tree nodes: 0
+Number of Unexplored B&C tree nodes: 1
+========================
+Input Graph:
+Number of Vertices: 20
+Erdos Renyi p Parameter: 0.5
+Number of Edges: 100
+Expected No of Odd Holes: 195
+Expected No of Odd Anti Holes: 13
+ODD_HOLE_TERMINATION_BATCH_SIZE: 0
+Graph Density: 0.526316
+0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,
+0,0,1,0,1,1,0,1,0,1,0,1,1,1,1,0,0,1,0,0,
+1,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,1,1,1,0,
+1,0,0,0,0,0,0,0,1,1,1,1,0,0,1,0,1,1,1,1,
+0,1,1,0,0,1,0,1,0,1,1,1,1,1,0,1,0,0,0,1,
+0,1,0,0,1,0,0,1,0,0,1,1,1,0,1,1,1,1,1,0,
+0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,1,0,1,1,
+1,1,0,0,1,1,1,0,0,1,0,1,1,1,1,0,1,0,1,0,
+0,0,0,1,0,0,1,0,0,1,1,0,0,1,1,1,1,0,1,0,
+0,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,1,0,
+0,0,1,1,1,1,0,0,1,1,0,0,0,1,1,0,1,0,0,0,
+1,1,0,1,1,1,0,1,0,1,0,0,1,0,1,1,1,1,1,0,
+0,1,1,0,1,1,0,1,0,0,0,1,0,0,1,1,1,1,1,1,
+0,1,0,0,1,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,
+1,1,0,1,0,1,0,1,1,1,1,1,1,0,0,0,1,0,0,1,
+1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,0,1,0,
+0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,
+0,1,1,1,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,
+0,0,1,1,0,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,
+1,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,
+========================
+Output Graph: 
+Number of Vertices: 20
+Number of Edges: 181
+Graph Density: 0.952632
+0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,
+1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,
+1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,
+1,0,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,
+1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,
+1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,
+0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,
+1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,
+Is Output Graph Empty or Complete?: 0
+Ratio of Added Edges Over Added + Removed Edges: 1
+Changes from Input to Output: 
+Added Edge: (0, 1)
+Added Edge: (0, 4)
+Added Edge: (0, 5)
+Added Edge: (0, 6)
+Added Edge: (0, 8)
+Added Edge: (0, 9)
+Added Edge: (0, 10)
+Added Edge: (0, 12)
+Added Edge: (0, 16)
+Added Edge: (0, 17)
+Added Edge: (0, 18)
+Added Edge: (1, 8)
+Added Edge: (1, 15)
+Added Edge: (1, 16)
+Added Edge: (1, 18)
+Added Edge: (1, 19)
+Added Edge: (2, 3)
+Added Edge: (2, 5)
+Added Edge: (2, 7)
+Added Edge: (2, 8)
+Added Edge: (2, 9)
+Added Edge: (2, 11)
+Added Edge: (2, 13)
+Added Edge: (2, 14)
+Added Edge: (2, 15)
+Added Edge: (3, 4)
+Added Edge: (3, 5)
+Added Edge: (3, 7)
+Added Edge: (3, 12)
+Added Edge: (3, 13)
+Added Edge: (3, 15)
+Added Edge: (4, 6)
+Added Edge: (4, 8)
+Added Edge: (4, 14)
+Added Edge: (4, 16)
+Added Edge: (4, 17)
+Added Edge: (4, 18)
+Added Edge: (5, 6)
+Added Edge: (5, 8)
+Added Edge: (5, 9)
+Added Edge: (5, 13)
+Added Edge: (5, 19)
+Added Edge: (6, 10)
+Added Edge: (6, 12)
+Added Edge: (6, 14)
+Added Edge: (6, 15)
+Added Edge: (6, 17)
+Added Edge: (7, 8)
+Added Edge: (7, 10)
+Added Edge: (7, 15)
+Added Edge: (7, 17)
+Added Edge: (8, 11)
+Added Edge: (8, 12)
+Added Edge: (8, 17)
+Added Edge: (8, 19)
+Added Edge: (9, 12)
+Added Edge: (9, 15)
+Added Edge: (9, 19)
+Added Edge: (10, 11)
+Added Edge: (10, 12)
+Added Edge: (10, 15)
+Added Edge: (10, 17)
+Added Edge: (10, 18)
+Added Edge: (10, 19)
+Added Edge: (11, 13)
+Added Edge: (11, 19)
+Added Edge: (12, 13)
+Added Edge: (13, 14)
+Added Edge: (13, 15)
+Added Edge: (13, 18)
+Added Edge: (13, 19)
+Added Edge: (14, 15)
+Added Edge: (14, 17)
+Added Edge: (14, 18)
+Added Edge: (15, 17)
+Added Edge: (15, 19)
+Added Edge: (16, 18)
+Added Edge: (16, 19)
+Added Edge: (17, 18)
+Added Edge: (17, 19)
+Added Edge: (18, 19)
+========================

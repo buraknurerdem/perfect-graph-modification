@@ -1,0 +1,89 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    30
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Odd hole count:1558
+Odd anti hole count:0
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 89.000000 after 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1558 rows, 435 columns, and 48300 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (9.95 ticks)
+Probing time = 0.00 sec. (0.24 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 1558 rows, 435 columns, and 48300 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (9.94 ticks)
+Probing time = 0.00 sec. (0.24 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.03 sec. (74.29 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           89.0000        0.0000           100.00%
+      0     0       16.3574    78       89.0000       16.3574      944   81.62%
+In Relaxation Callback. Heuristic solution found with objective value: 29. Prev. Best Sol: 89
+      0     0       16.4921    90       89.0000      Cuts: 59     1022   81.47%
+      0     0  -1.00000e+75     0       89.0000       16.4921     1022   81.47%
+      0     0       16.5245    90       29.0000      Cuts: 17     1069   43.02%
+      0     0       16.5634    88       29.0000   ZeroHalf: 9     1116   42.88%
+      0     0       16.6887    88       29.0000      Cuts: 34     1197   42.45%
+      0     0       16.7212    90       29.0000  ZeroHalf: 11     1244   42.34%
+      0     0       16.7498    90       29.0000   ZeroHalf: 6     1297   42.24%
+      0     0       16.7630    87       29.0000   ZeroHalf: 4     1333   42.20%
+      0     0       16.7765    84       29.0000   ZeroHalf: 2     1372   42.15%
+      0     0       16.7946    90       29.0000  ZeroHalf: 20     1429   42.09%
+      0     0       16.8006    89       29.0000   ZeroHalf: 1     1465   42.07%
+      0     0       16.8038    87       29.0000   ZeroHalf: 2     1491   42.06%
+      0     0       16.8065    88       29.0000   ZeroHalf: 1     1512   42.05%
+      0     0       16.8080    90       29.0000   ZeroHalf: 3     1539   42.04%
+      0     0       16.8094    90       29.0000   ZeroHalf: 1     1567   42.04%
+      0     2       16.8094    89       29.0000       16.8094     1567   42.04%
+Elapsed time = 1.81 sec. (1654.68 ticks, tree = 0.02 MB, solutions = 1)
+     25    23       17.9833    72       29.0000       16.8111     4956   42.03%
+In Relaxation Callback. Heuristic solution found with objective value: 27. Prev. Best Sol: 29
+In Relaxation Callback. Heuristic solution found with objective value: 27. Prev. Best Sol: 29
+In Relaxation Callback. Heuristic solution found with objective value: 26. Prev. Best Sol: 27
+In Relaxation Callback. Heuristic solution found with objective value: 26. Prev. Best Sol: 27
+*   122+   84                           23.0000       16.8111            26.91%
+    147   113       18.7607    81       23.0000       16.8111    16234   26.91%
+    337   235       21.7699    67       23.0000       17.5405    34634   23.74%
+*   352+  233                           22.0000       17.6336            19.85%
+    676   379       20.2779    60       22.0000       17.8550    58791   18.84%
+   1046   547       20.4277    84       22.0000       18.0837    75945   17.80%
+*  1248+  630                           21.0000       18.0841            13.89%
+   1555   580       19.9200    71       21.0000       18.6708    98863   11.09%
+   2175   627       19.6222    82       21.0000       18.8485   128134   10.25%
+   2729   652       19.9832    77       21.0000       19.1097   145075    9.00%
+   3327   531        cutoff             21.0000       19.2925   182667    8.13%
+
+Zero-half cuts applied:  35
+Lift and project cuts applied:  2
+User cuts applied:  1508
+
+Root node processing (before b&c):
+  Real time             =    1.76 sec. (1652.46 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    7.32 sec. (2292.62 ticks)
+  Sync time (average)   =    5.13 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    9.07 sec. (3945.09 ticks)
+STATUS: Optimal
+OBJ VALUE: 21
+Explored Number of nodes: 3809
+Unexplored Number of nodes: 0

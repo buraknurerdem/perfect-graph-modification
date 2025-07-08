@@ -1,0 +1,60 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    20
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 142.000000 after 0.00 sec. (0.01 ticks)
+Found incumbent of value 48.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 190 columns, and 0 nonzeros.
+Reduced MIP has 190 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 190 columns, and 0 nonzeros.
+Reduced MIP has 190 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.01 sec. (0.02 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           48.0000        0.0000           100.00%
+      0     0        7.1970    32       48.0000        0.0000        0  100.00%
+      0     0        7.2955    30       48.0000  ZeroHalf: 11       21   84.80%
+      0     0        7.3771    25       48.0000   ZeroHalf: 8       41   84.63%
+      0     0        7.4286    24       48.0000       Cuts: 5       51   84.52%
+      0     0        7.4286    25       48.0000       Cuts: 8       64   84.52%
+*     0+    0                            8.0000        7.4286             7.14%
+      0     0        cutoff              8.0000        8.0000       64    0.00%
+Elapsed time = 0.16 sec. (8.71 ticks, tree = 0.01 MB, solutions = 2)
+
+Zero-half cuts applied:  6
+User cuts applied:  18
+
+Root node processing (before b&c):
+  Real time             =    0.16 sec. (8.72 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.16 sec. (8.72 ticks)
+STATUS: Optimal
+OBJ VALUE: 8
+Explored Number of nodes: 0
+Unexplored Number of nodes: 0

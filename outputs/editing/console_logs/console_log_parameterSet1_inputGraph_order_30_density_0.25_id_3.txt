@@ -1,0 +1,108 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    30
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 104.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Probing time = 0.00 sec. (0.03 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.06 sec. (0.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          104.0000        0.0000           100.00%
+      0     0       19.8127   107      104.0000        0.0000        0  100.00%
+      0     2       19.8127   106      104.0000       19.8127        0   80.95%
+Elapsed time = 0.43 sec. (163.05 ticks, tree = 0.02 MB, solutions = 1)
+*   854   723      integral     0       40.0000       19.8382    32709   50.40%
+*   969   813      integral     0       37.0000       19.8382    36735   46.38%
+   1066   854       27.5829    60       37.0000       19.8382    43605   46.38%
+   1542  1171       29.4757    51       37.0000       19.8382    64622   46.38%
+*  1831  1442      integral     0       31.0000       19.8382    77961   36.01%
+   2217  1215       26.5025    69       31.0000       20.4854    93800   33.92%
+   2556  1541       27.4170    72       31.0000       20.4854   115522   33.92%
+   2943  1910       28.3639    52       31.0000       20.4854   137314   33.92%
+   3318  2130       22.4669   100       31.0000       20.4854   149647   33.92%
+   3728  2560       24.7540    94       31.0000       20.4854   173228   33.92%
+   4087  2828       23.5273   114       31.0000       20.6937   186682   33.25%
+*  4692  3459      integral     0       30.0000       20.6937   219333   31.02%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 435 columns, and 0 nonzeros.
+Reduced MIP has 435 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.05 ticks)
+Represolve time = 0.02 sec. (9.66 ticks)
+   5310   101       21.8750    35       30.0000       21.2705   240544   29.10%
+Elapsed time = 4.38 sec. (3195.71 ticks, tree = 0.08 MB, solutions = 5)
+   7940  2395       23.7239    97       30.0000       21.2705   352620   29.10%
+*  9815  4024      integral     0       29.0000       21.2705   423545   26.65%
+  11844  5073       26.3952    97       29.0000       21.5279   528601   25.77%
+  13597  6377       27.2258    82       29.0000       21.7768   612577   24.91%
+  15301  7664        cutoff             29.0000       22.0511   702309   23.96%
+* 15979  8105      integral     0       27.0000       22.1538   730732   17.95%
+  17466  3746       24.8383    91       27.0000       22.5970   813189   16.31%
+  18888  4628       25.5201    83       27.0000       22.8828   910488   15.25%
+  20695  5660       25.8971    90       27.0000       23.1088   997518   14.41%
+  22564  6702       25.0759    93       27.0000       23.2579  1083083   13.86%
+Elapsed time = 15.70 sec. (11980.87 ticks, tree = 155.87 MB, solutions = 7)
+  24112  7769       24.2578   101       27.0000       23.3590  1166787   13.49%
+  26032  8765       25.8059    84       27.0000       23.4688  1243803   13.08%
+  28007 10023        cutoff             27.0000       23.5524  1338402   12.77%
+* 29460 11251      integral     0       26.0000       23.5927  1429891    9.26%
+  29978  5502       24.4485    81       26.0000       23.6142  1437460    9.18%
+  31667  6007        cutoff             26.0000       23.6795  1522461    8.93%
+  33793  6610       24.3240    86       26.0000       23.7655  1620512    8.59%
+  35950  7099        cutoff             26.0000       23.8597  1721394    8.23%
+  38201  7376       24.9807    78       26.0000       23.9526  1785861    7.87%
+  40285  7653        cutoff             26.0000       24.0275  1885795    7.59%
+  42558  7727        cutoff             26.0000       24.1171  1985387    7.24%
+Elapsed time = 28.19 sec. (21521.09 ticks, tree = 191.33 MB, solutions = 8)
+  45065  7659       24.7684    82       26.0000       24.1772  2084117    7.01%
+  47720  7426        cutoff             26.0000       24.2486  2171915    6.74%
+  50483  6977        cutoff             26.0000       24.3295  2250753    6.42%
+  52956  6086        cutoff             26.0000       24.4089  2333665    6.12%
+  56465  3138        cutoff             26.0000       24.6123  2467207    5.34%
+
+User cuts applied:  3820
+
+Root node processing (before b&c):
+  Real time             =    0.42 sec. (162.84 ticks)
+Parallel b&c, 24 threads:
+  Real time             =   34.78 sec. (26658.84 ticks)
+  Sync time (average)   =   18.96 sec.
+  Wait time (average)   =    0.01 sec.
+                          ------------
+Total (root+branch&cut) =   35.20 sec. (26821.68 ticks)
+STATUS: Optimal
+OBJ VALUE: 26
+Explored Number of nodes: 59410
+Unexplored Number of nodes: 0

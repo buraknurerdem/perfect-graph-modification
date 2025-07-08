@@ -1,0 +1,73 @@
+ODD_HOLE_TERMINATION_PERCENTAGE is set to 999
+Program searches for ALL odd holes and odd antiholes
+==============================================
+n:                                    25
+ODD_HOLE_TERMINATION_PERCENTAGE:      999
+ODD_HOLE_TERMINATION_BATCH_SIZE:      0
+ODD_ANTI_HOLE_TERMINATION_BATCH_SIZE: 0
+==============================================
+Version identifier: 22.1.1.0 | 2022-11-28 | 9160aff4d
+CPXPARAM_Threads                                 24
+CPXPARAM_TimeLimit                               900
+Generic callback                                 0x60
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Found incumbent of value 71.000000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 300 columns, and 0 nonzeros.
+Reduced MIP has 300 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.04 ticks)
+Probing time = 0.00 sec. (0.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 24 threads.
+Root relaxation solution time = 0.01 sec. (0.03 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           71.0000        0.0000           100.00%
+In Candidate Callback. Heuristic solution found with objective value: 15. Prev. Best Sol: 71
+In Candidate Callback. Heuristic solution found with objective value: 15. Prev. Best Sol: 71
+In Candidate Callback. Heuristic solution found with objective value: 15. Prev. Best Sol: 71
+In Candidate Callback. Heuristic solution found with objective value: 15. Prev. Best Sol: 71
+      0     0       11.1392    53       71.0000        0.0000        0  100.00%
+      0     0  -1.00000e+75     0       71.0000       11.1392        0   84.31%
+In Relaxation Callback. Heuristic solution found with objective value: 14. Prev. Best Sol: 15
+      0     0       11.2515    53       15.0000   ZeroHalf: 9       29   24.99%
+      0     0  -1.00000e+75     0       15.0000       11.2515       29   24.99%
+      0     0       11.2609    47       14.0000   ZeroHalf: 4       38   19.57%
+      0     0       11.2628    49       14.0000 UserPurge1: 2       45   19.55%
+      0     0       11.2778    47       14.0000   ZeroHalf: 2       59   19.44%
+      0     0       11.2996    45       14.0000      Cuts: 13       73   19.29%
+      0     0       11.3123    47       14.0000   ZeroHalf: 2       83   19.20%
+      0     0       11.3514    52       14.0000       Cuts: 9      104   18.92%
+      0     0       11.3540    54       14.0000 UserPurge1: 4      108   18.90%
+      0     0       11.3699    51       14.0000       Cuts: 7      122   18.79%
+      0     0       11.3732    51       14.0000 UserPurge1: 5      128   18.76%
+In Candidate Callback. Heuristic solution found with objective value: 13. Prev. Best Sol: 14
+      0     2       11.3732    51       14.0000       11.3732      128   18.76%
+Elapsed time = 0.24 sec. (35.01 ticks, tree = 0.02 MB, solutions = 1)
+*   426    64      integral     0       13.0000       11.5888     5783   10.86%
+
+Zero-half cuts applied:  9
+User cuts applied:  421
+
+Root node processing (before b&c):
+  Real time             =    0.20 sec. (34.88 ticks)
+Parallel b&c, 24 threads:
+  Real time             =    0.22 sec. (23.25 ticks)
+  Sync time (average)   =    0.14 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.43 sec. (58.13 ticks)
+STATUS: Optimal
+OBJ VALUE: 13
+Explored Number of nodes: 480
+Unexplored Number of nodes: 0
