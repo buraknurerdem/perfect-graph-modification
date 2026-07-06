@@ -10,11 +10,16 @@ struct heuristic_stats
     long long runtime;
 };
 
-heuristic_stats heuristic02(std::vector<std::vector<bool>> graph);
+heuristic_stats iterative_modification_heuristic(std::vector<std::vector<bool>> graph);
 
-heuristic_stats heuristic02_base_graph(const std::vector<std::vector<bool>> &base_graph,
-                                       std::vector<std::vector<bool>> graph,
-                                       double m);
+heuristic_stats heuristic02_base_graph(
+    const std::vector<std::vector<bool>> &base_graph, std::vector<std::vector<bool>> graph, double m
+);
 
-heuristic_stats heuristic02_completion(const std::vector<std::vector<bool>> &base_graph,
-                                       std::vector<std::vector<bool>> graph);
+heuristic_stats iterative_modification_heuristic_completion(
+    const std::vector<std::vector<bool>> &base_graph, std::vector<std::vector<bool>> graph
+);
+
+heuristic_stats iterative_modification_heuristic_near_perfect(
+    std::vector<std::vector<bool>> graph, int max_allowed_hole_count
+);

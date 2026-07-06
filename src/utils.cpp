@@ -1,8 +1,8 @@
 #include <fstream>
 #include <iomanip>
 #include <iostream>
-#include <sstream>
 #include <random>
+#include <sstream>
 
 #include "utils.h"
 
@@ -238,7 +238,10 @@ std::vector<std::vector<bool>> read_graph_adj_matrix_from_txt_file(std::string g
                 row.push_back(c == '1');
             }
         }
-        graph.push_back(row);
+        if(!row.empty())
+        {
+            graph.push_back(row);
+        }
     }
 
     graph_file.close();
@@ -273,8 +276,7 @@ double calculate_density(const std::vector<std::vector<bool>> &graph)
     return density;
 }
 
-std::vector<std::vector<int>>
-get_adj_list_from_adj_matrix(const std::vector<std::vector<bool>> &graph)
+std::vector<std::vector<int>> get_adj_list_from_adj_matrix(const std::vector<std::vector<bool>> &graph)
 {
     int n = graph.size();
     std::vector<std::vector<int>> graph_adj_list(n);
@@ -296,7 +298,6 @@ get_adj_list_from_adj_matrix(const std::vector<std::vector<bool>> &graph)
 void print_odd_holes(const std::unordered_map<std::string, std::vector<int>> &odd_holes)
 {
     std::cout << "Number of odd holes: " << odd_holes.size() << std::endl;
-
     if (!odd_holes.empty())
     {
         std::cout << "Printing odd-holes: " << std::endl;
@@ -309,19 +310,18 @@ void print_odd_holes(const std::unordered_map<std::string, std::vector<int>> &od
             std::cout << std::endl;
         }
     }
-
     return;
 }
 
-int calculate_number_of_changes(const std::vector<std::vector<bool>> &g1,
-                                const std::vector<std::vector<bool>> &g2)
+int calculate_number_of_changes(
+    const std::vector<std::vector<bool>> &g1, const std::vector<std::vector<bool>> &g2
+)
 {
     int n1 = g1.size();
     int n2 = g2.size();
     if (n1 != n2)
     {
-        std::cerr << "Two graphs are not the same order in calculate_number_of_changes()!"
-                  << std::endl;
+        std::cerr << "Two graphs are not the same order in calculate_number_of_changes()!" << std::endl;
     }
 
     int changes = 0;
@@ -339,7 +339,8 @@ int calculate_number_of_changes(const std::vector<std::vector<bool>> &g1,
 }
 
 void remove_entries_containing_vp_from_odd_holes(
-    std::unordered_map<std::string, std::vector<int>> &odd_holes, int v1, int v2)
+    std::unordered_map<std::string, std::vector<int>> &odd_holes, int v1, int v2
+)
 {
     for (auto it = odd_holes.begin(); it != odd_holes.end();)
     {
@@ -360,8 +361,7 @@ bool parse_graph_filename(const std::string &filepath, graph_file_info &graph_fi
 {
 
     size_t last_slash = filepath.find_last_of("/\\");
-    std::string filename =
-        (last_slash == std::string::npos) ? filepath : filepath.substr(last_slash + 1);
+    std::string filename = (last_slash == std::string::npos) ? filepath : filepath.substr(last_slash + 1);
 
     if (filename.size() < 4 || filename.substr(filename.size() - 4) != ".txt")
         return false;
@@ -459,12 +459,14 @@ find_a_maximal_clique_including_a_given_vertex(const std::vector<std::vector<boo
     return clique;
 }
 
-void write_graph_to_file(std::vector<std::vector<bool>> &graph,
-                         std::string graph_folder,
-                         std::string type,
-                         int order,
-                         std::string density_dec_str,
-                         int id)
+void write_graph_to_file(
+    std::vector<std::vector<bool>> &graph,
+    std::string graph_folder,
+    std::string type,
+    int order,
+    std::string density_dec_str,
+    int id
+)
 {
     int target_length = 5;
 
@@ -479,8 +481,8 @@ void write_graph_to_file(std::vector<std::vector<bool>> &graph,
         density_dec_str.append(target_length - density_dec_str.length(), '0');
     }
 
-    std::string graph_file_name = graph_folder + "/graph_" + type + "_" + n_str + "_" +
-                                  density_dec_str + "_" + id_str + ".txt";
+    std::string graph_file_name =
+        graph_folder + "/graph_" + type + "_" + n_str + "_" + density_dec_str + "_" + id_str + ".txt";
 
     // writing to txt
     std::ofstream graph_file(graph_file_name);
@@ -499,8 +501,7 @@ void write_graph_to_file(std::vector<std::vector<bool>> &graph,
     return;
 }
 
-void write_graph_to_file_given_filename(std::vector<std::vector<bool>> &graph,
-                                        std::string output_file_name)
+void write_graph_to_file_given_filename(std::vector<std::vector<bool>> &graph, std::string output_file_name)
 {
     int order = graph.size();
     std::ofstream graph_file(output_file_name);
@@ -530,15 +531,18 @@ void remove_vertex_from_graph(std::vector<std::vector<bool>> &graph, int v)
     return;
 }
 
-std::vector<int> select_k_without_replacement(int n, int k){
+std::vector<int> select_k_without_replacement(int n, int k)
+{
 
-    if (k > n) {
+    if (k > n)
+    {
         throw std::invalid_argument("k cannot be greater than the array size");
     }
 
     // Create a vector of integers from 0 to n
     std::vector<int> indices(n, 0);
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         indices[i] = i;
     }
 
@@ -549,5 +553,92 @@ std::vector<int> select_k_without_replacement(int n, int k){
 
     // Return the first k elements
     return std::vector<int>(indices.begin(), indices.begin() + k);
+}
 
+int random_weighted_choice(const std::vector<int> &weights, double random_value)
+{
+    int sum = 0;
+    int len = weights.size();
+
+    for (int i = 0; i < len; i++)
+    {
+        sum += weights[i];
+        if (weights[i] < 0)
+        {
+            std::cerr << "Error: Negative weight in random_weighted_choice." << std::endl;
+        }
+    }
+
+    // Scale random_value
+    double scaled_random = random_value * sum;
+
+    for (int i = 0; i < len; i++)
+    {
+        if (scaled_random < weights[i])
+        {
+            return i;
+        }
+        else
+        {
+            scaled_random -= weights[i];
+        }
+    }
+
+    std::cerr << "Error: Problem in random_weighted_choice." << std::endl;
+    return -1;
+}
+
+int select_random_integer(int n)
+{
+    // Return an integer choosen uniformly random in the interval [0,n-1]
+    
+    std::random_device rd;
+    std::mt19937 generator(rd());
+    std::uniform_int_distribution<int> distribution(0, n - 1);
+    int random_int = distribution(generator);
+    return random_int;
+}
+
+uint64_t select_random_vertex_pair_packed(int n)
+{
+    // n is the graph order. choose u and v with rejection sampling
+    
+    if(n < 2)
+    {
+        std::cerr << "Error: n should be >= 2 in select_random_vertex_pair.\n";
+    }
+
+    std::random_device rd;
+    std::mt19937 generator(rd());
+    std::uniform_int_distribution<int> distribution(0, n - 1);
+    int u = distribution(generator);
+    int v;
+    do {
+        v = distribution(generator);
+    } while (u == v);
+
+    // make pair in data type uint64_t
+    auto vp = pack_pair(u, v);
+    return vp;
+}
+
+std::pair<int, int> select_random_vertex_pair_unpacked(int n)
+{
+    // n is the graph order. choose u and v with rejection sampling
+    
+    if(n < 2)
+    {
+        std::cerr << "Error: n should be >= 2 in select_random_vertex_pair.\n";
+    }
+
+    std::random_device rd;
+    std::mt19937 generator(rd());
+    std::uniform_int_distribution<int> distribution(0, n - 1);
+    int u = distribution(generator);
+    int v;
+    do {
+        v = distribution(generator);
+    } while (u == v);
+
+    return {u, v};
 }

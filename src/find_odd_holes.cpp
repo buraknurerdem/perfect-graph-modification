@@ -1,12 +1,14 @@
 #include "find_odd_holes.h"
 #include "utils.h"
 
-void odd_hole_recursive(const std::vector<std::vector<bool>> &graph_adj_mat,
-                        const std::vector<std::vector<int>> &graph_adj_list,
-                        std::vector<int> &path_vector,
-                        std::unordered_map<std::string, std::vector<int>> &odd_holes,
-                        bool is_anti_hole_search,
-                        int termination_batch_size)
+void odd_hole_recursive(
+    const std::vector<std::vector<bool>> &graph_adj_mat,
+    const std::vector<std::vector<int>> &graph_adj_list,
+    std::vector<int> &path_vector,
+    std::unordered_map<std::string, std::vector<int>> &odd_holes,
+    bool is_anti_hole_search,
+    int termination_batch_size
+)
 {
 
     if (termination_batch_size != 0 && (odd_holes.size() >= termination_batch_size))
@@ -82,8 +84,10 @@ void odd_hole_recursive(const std::vector<std::vector<bool>> &graph_adj_mat,
         else if (!chord_exist)
         {
             path_vector.push_back(i);
-            odd_hole_recursive(graph_adj_mat, graph_adj_list, path_vector, odd_holes,
-                               is_anti_hole_search, termination_batch_size);
+            odd_hole_recursive(
+                graph_adj_mat, graph_adj_list, path_vector, odd_holes, is_anti_hole_search,
+                termination_batch_size
+            );
         }
     }
 
@@ -91,10 +95,11 @@ void odd_hole_recursive(const std::vector<std::vector<bool>> &graph_adj_mat,
     return;
 }
 
-std::unordered_map<std::string, std::vector<int>>
-find_odd_holes(const std::vector<std::vector<bool>> &graph_adj_mat,
-               bool is_anti_hole_search,
-               int termination_batch_size)
+std::unordered_map<std::string, std::vector<int>> find_odd_holes(
+    const std::vector<std::vector<bool>> &graph_adj_mat,
+    bool is_anti_hole_search,
+    int termination_batch_size
+)
 {
 
     auto graph_adj_list = get_adj_list_from_adj_matrix(graph_adj_mat);
@@ -104,8 +109,10 @@ find_odd_holes(const std::vector<std::vector<bool>> &graph_adj_mat,
     {
         std::vector<int> path_vector = {i};
         path_vector.reserve(graph_adj_mat.size());
-        odd_hole_recursive(graph_adj_mat, graph_adj_list, path_vector, odd_holes,
-                           is_anti_hole_search, termination_batch_size);
+        odd_hole_recursive(
+            graph_adj_mat, graph_adj_list, path_vector, odd_holes, is_anti_hole_search,
+            termination_batch_size
+        );
     }
 
     return odd_holes;
@@ -129,15 +136,18 @@ bool is_perfect(const std::vector<std::vector<bool>> &graph_adj_mat)
     return true;
 }
 
-void odd_hole_recursive_for_vp(const std::vector<std::vector<bool>> &graph_adj_mat,
-                               const std::vector<std::vector<int>> &graph_adj_list,
-                               std::vector<int> &path_vector,
-                               std::unordered_map<std::string, std::vector<int>> &odd_holes,
-                               bool is_anti_hole_search,
-                               int v2, int termination_batch_size)
+void odd_hole_recursive_for_vp(
+    const std::vector<std::vector<bool>> &graph_adj_mat,
+    const std::vector<std::vector<int>> &graph_adj_list,
+    std::vector<int> &path_vector,
+    std::unordered_map<std::string, std::vector<int>> &odd_holes,
+    bool is_anti_hole_search,
+    int v2,
+    int termination_batch_size
+)
 {
 
-    if(termination_batch_size != 0 && odd_holes.size() >= termination_batch_size)
+    if (termination_batch_size != 0 && odd_holes.size() >= termination_batch_size)
     {
         return;
     }
@@ -210,8 +220,10 @@ void odd_hole_recursive_for_vp(const std::vector<std::vector<bool>> &graph_adj_m
         else if (!chord_exist)
         {
             path_vector.push_back(i);
-            odd_hole_recursive_for_vp(graph_adj_mat, graph_adj_list, path_vector, odd_holes,
-                                      is_anti_hole_search, v2, termination_batch_size);
+            odd_hole_recursive_for_vp(
+                graph_adj_mat, graph_adj_list, path_vector, odd_holes, is_anti_hole_search, v2,
+                termination_batch_size
+            );
         }
     }
 
@@ -219,22 +231,27 @@ void odd_hole_recursive_for_vp(const std::vector<std::vector<bool>> &graph_adj_m
     return;
 }
 
-void find_new_oh_and_oah_for_vp(int v1,
-                                int v2,
-                                const std::vector<std::vector<bool>> &graph,
-                                const std::vector<std::vector<bool>> &complement_graph,
-                                std::unordered_map<std::string, std::vector<int>> &odd_holes,
-                                std::unordered_map<std::string, std::vector<int>> &odd_anti_holes,
-                                int termination_batch_size)
+void find_new_oh_and_oah_for_vp(
+    int v1,
+    int v2,
+    const std::vector<std::vector<bool>> &graph,
+    const std::vector<std::vector<bool>> &complement_graph,
+    std::unordered_map<std::string, std::vector<int>> &odd_holes,
+    std::unordered_map<std::string, std::vector<int>> &odd_anti_holes,
+    int termination_batch_size
+)
 {
     auto graph_adj_list = get_adj_list_from_adj_matrix(graph);
 
     std::vector<int> path_vector = {v1};
     path_vector.reserve(graph.size());
-    odd_hole_recursive_for_vp(graph, graph_adj_list, path_vector, odd_holes, false, v2, termination_batch_size);
+    odd_hole_recursive_for_vp(
+        graph, graph_adj_list, path_vector, odd_holes, false, v2, termination_batch_size
+    );
 
     int new_oh_size = odd_holes.size();
-    if (termination_batch_size != 0 && new_oh_size >= termination_batch_size){
+    if (termination_batch_size != 0 && new_oh_size >= termination_batch_size)
+    {
         return;
     }
     int oah_term_size = termination_batch_size - new_oh_size;
@@ -244,8 +261,9 @@ void find_new_oh_and_oah_for_vp(int v1,
 
     path_vector = {v1};
     path_vector.reserve(graph.size());
-    odd_hole_recursive_for_vp(complement_graph, comp_adj_list, path_vector, odd_anti_holes, true,
-                              v2, (oah_term_size));
+    odd_hole_recursive_for_vp(
+        complement_graph, comp_adj_list, path_vector, odd_anti_holes, true, v2, (oah_term_size)
+    );
 }
 
 void find_and_list_odd_holes_and_odd_antiholes(const std::vector<std::vector<bool>> &graph)
@@ -261,3 +279,4 @@ void find_and_list_odd_holes_and_odd_antiholes(const std::vector<std::vector<boo
 
     return;
 };
+

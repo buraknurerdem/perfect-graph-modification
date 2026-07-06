@@ -29,16 +29,17 @@ std::vector<std::vector<bool>> read_graph_adj_matrix_from_txt_file(std::string g
 
 double calculate_density(const std::vector<std::vector<bool>> &graph);
 
-std::vector<std::vector<int>>
-get_adj_list_from_adj_matrix(const std::vector<std::vector<bool>> &graph);
+std::vector<std::vector<int>> get_adj_list_from_adj_matrix(const std::vector<std::vector<bool>> &graph);
 
 void print_odd_holes(const std::unordered_map<std::string, std::vector<int>> &odd_holes);
 
-int calculate_number_of_changes(const std::vector<std::vector<bool>> &g1,
-                                const std::vector<std::vector<bool>> &g2);
+int calculate_number_of_changes(
+    const std::vector<std::vector<bool>> &g1, const std::vector<std::vector<bool>> &g2
+);
 
 void remove_entries_containing_vp_from_odd_holes(
-    std::unordered_map<std::string, std::vector<int>> &odd_holes, int v1, int v2);
+    std::unordered_map<std::string, std::vector<int>> &odd_holes, int v1, int v2
+);
 
 inline std::pair<int, int> unpack_pair(uint64_t key)
 {
@@ -62,16 +63,25 @@ bool is_matrix_symmetric(const std::vector<std::vector<bool>> &mat);
 std::vector<int>
 find_a_maximal_clique_including_a_given_vertex(const std::vector<std::vector<bool>> &graph, int v);
 
-void write_graph_to_file(std::vector<std::vector<bool>> &graph,
-                         std::string graph_folder,
-                         std::string type,
-                         int order,
-                         std::string density_dec_str,
-                         int id);
+void write_graph_to_file(
+    std::vector<std::vector<bool>> &graph,
+    std::string graph_folder,
+    std::string type,
+    int order,
+    std::string density_dec_str,
+    int id
+);
 
-void write_graph_to_file_given_filename(std::vector<std::vector<bool>> &graph,
-                                        std::string output_file_name);
+void write_graph_to_file_given_filename(std::vector<std::vector<bool>> &graph, std::string output_file_name);
 
 void remove_vertex_from_graph(std::vector<std::vector<bool>> &graph, int v);
 
 std::vector<int> select_k_without_replacement(int n, int k);
+
+int random_weighted_choice(const std::vector<int> &weights, double random_value);
+
+int select_random_integer(int n);
+
+uint64_t select_random_vertex_pair_packed(int n);
+
+std::pair<int, int> select_random_vertex_pair_unpacked(int n);
