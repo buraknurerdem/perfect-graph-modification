@@ -5,18 +5,16 @@ This repository contains the data instances and C++ source code used in our pape
 
 ## Repository Structure
 
-*   `src/`: Source code for the minimum perfect editing and completion problems.
-*   `src_sandwich/`: Source code for the perfect graph sandwich problem.
-*   `heuristic_experiment/`: Files and scripts for the standalone performance evaluation of the heuristic `IMH`.
-*   `inputs/`: Graph instances used in the computational experiments.
+* `src/`: Source code for the minimum perfect editing and completion problems.
+* `src_sandwich/`: Source code for the perfect graph sandwich problem.
+* `heuristic_experiment/`: Files and scripts for the standalone performance evaluation of the heuristic `IMH`.
+* `inputs/`: Graphs used in the computational experiments.
 
 ## Prerequisites
 
 To compile and run the programs, you will need:
-*   A C++20 compatible compiler (e.g., `clang++`)
-*   **IBM ILOG CPLEX Optimization Studio** (Version [Insert Version, e.g., 22.1])
-
-You must set the environment variable `$CPLEX_DIR` to your CPLEX installation directory and `$EXECUTABLE` the path of the output file before compiling.
+* A C++20 compatible compiler (e.g., `clang++`)
+* IBM ILOG CPLEX Optimization Studio (Version 22.1.1)
 
 ## Compilation
 
@@ -32,6 +30,8 @@ clang++ -std=c++20 -O3 -o $EXECUTABLE \
     -L$CPLEX_DIR/concert/lib/x86-64_linux/static_pic \
     -lilocplex -lcplex -lconcert -lm -lpthread -ldl
 ```
+
+You must set the environment variable `$CPLEX_DIR` to your CPLEX installation directory and the path of the output file `$EXECUTABLE` before compiling.
 
 ## Usage
 
